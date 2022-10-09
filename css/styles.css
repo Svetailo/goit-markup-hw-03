@@ -170,7 +170,7 @@ ul {
   
   /* Section "Preference" */
   .preference {
-    margin-top: 98px;
+    margin-top: 94px;
   }
   
   .preference-subtitle {
@@ -194,6 +194,7 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
+    padding-top: 94px;
   }
   
   /* Section Team */
@@ -206,16 +207,22 @@ ul {
     background-color: var(--primary-background-color);
   }
   
+  .list-team {
+    padding-bottom: 94px;
+  }
   .team-subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   
   .team-text {
     font-size: 16px;
     line-height: 1.19;
     color: var(--secondary-text-color);
+    margin-bottom: 30px;
   }
   
   /* Portfolio */
@@ -240,6 +247,8 @@ ul {
     background-color: var(--footer-background-color);
   }
   
+  
+  .cellar {padding-top: 60px;}
   .adress {
     font-style: normal;
     font-size: 14px;
@@ -253,6 +262,7 @@ ul {
     font-size: 14px;
     line-height: 1.71;
     color: var(--footer-link-color);
+    
   }
   
   .adress-link:hover,
