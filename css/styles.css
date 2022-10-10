@@ -37,17 +37,51 @@ ul {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    
   }
 
   .link {
     text-decoration: none;
   }
-  
+
+  .mail-nav {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .site-nav .list {
+  }
+
+  /* Наші переваги */
   .list {
     list-style: none;
+    display: flex;
   }
+
+
+  .site-nav {display: flex;
+    list-style: none;
+    margin-left: 93px;
+  }
+
+
+.site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
   
+  .site-nav .item + .item{
+    margin-left: 50px;
+  }
+
+  .auth-link {display: flex;
+  margin-left: auto;}
+
+  .auth-link .item + .item { margin-left: 50px;}
+
   /* button */
   
   .button-hero {
@@ -105,8 +139,10 @@ ul {
   }
   
   /* Navigation panel */
+
   
   .nav-link {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -137,20 +173,28 @@ ul {
   }
   
   .hero {
+   
+    height: 600px; 
     text-align: center;
     background-color: var(--footer-background-color);
   }
   
+  .hero-container { padding-top: 200px;
+  padding-bottom: 200px;}
   .hero-title {
+    
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     
     color: var(--white-text-color);
     margin-bottom: 30px ;
     margin-top: 0px;
+    
   }
   
   /* Hidden headers */
@@ -172,7 +216,15 @@ ul {
   .preference {
     margin-top: 94px;
   }
-  
+  /* чим ми займаємося */
+
+  .section-imeg {
+    margin-right: 30px;
+  }
+
+  .section-imeg:nth-child(3) {margin-right: 0;}
+
+
   .preference-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -194,7 +246,8 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
-    padding-top: 94px;
+    padding-top: 108px;
+    text-align: center;
   }
   
   /* Section Team */
@@ -203,12 +256,21 @@ ul {
     background-color: var(--secondary-background-color);
   }
   
+  .team-container {
+    /* padding-top: 94px; */
+    padding-bottom: 94px;
+    margin-top: 80px;
+  }
   .team-card {
     background-color: var(--primary-background-color);
-  }
+      margin-right: 30px;}
+  
+  .team-card:nth-child(4) {margin-right: 0;}
+  
   
   .list-team {
     padding-bottom: 94px;
+    list-style: none;
   }
   .team-subtitle {
     font-weight: 500;
@@ -216,6 +278,7 @@ ul {
     line-height: 1.19;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .team-text {
@@ -223,10 +286,41 @@ ul {
     line-height: 1.19;
     color: var(--secondary-text-color);
     margin-bottom: 30px;
+    text-align: center;
   }
   
   /* Portfolio */
-  
+.filtr-list {
+  display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
+  .filtr-list .item:not(:last-child) {
+    margin-right: 8px;
+  }
+ 
+
+  .portfolio {
+    margin-bottom: 94px;
+  }
+
+  .list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 94px;
+  }
+
+  .container-element {
+    margin-right: 30px;
+    
+  }
+  .container-element:nth-child(3n) { margin-right: 0;} 
+
+   .container-element:nth-last-child(-n+3) {margin-bottom: 0;}
+
   .portfolio-subtitle {
     font-weight: 700;
     font-size: 18px;
@@ -248,21 +342,31 @@ ul {
   }
   
   
-  .cellar {padding-top: 60px;}
+  /* .cellar {padding-top: 60px;
+  } */
+
+  .cellar-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .adress {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     color: var(--white-text-color);
   }
-  
+  .list-cellar {
+    list-style: none; 
+    margin-top: 20px;
+  }
   .adress-link {
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--footer-link-color);
-    
+    margin-top: 9px;
   }
   
   .adress-link:hover,

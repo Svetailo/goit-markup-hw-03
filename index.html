@@ -20,31 +20,32 @@
   <body>
     <header>
       <div class="container">
-        <nav>
+        <nav class="container mail-nav">
           <a href="./index.html" class="logo link"><span class="logo-web">Web</span>Studio</a>
-          <ul class="list">
-            <li><a href="./index.html" class="nav-link link link-current">Студія</a></li>
-            <li><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
-            <li><a href="#" class="nav-link link">Контакти</a></li>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="nav-link link link-current">Студія</a>
+            </li>
+            <li class="item"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
+            <li class="item"><a href="#" class="nav-link link">Контакти</a></li>
+          </ul>
+          <ul class="auth-link list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="auth-link link">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="auth-link link">+380961111111</a>
+            </li>
           </ul>
         </nav>
-      </div>
-      <div class="container">
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="auth-link link">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="auth-link link">+380961111111</a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container hero-container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-hero">Замовити послугу</button>
-        
+        </div>
       </section>
 
       <section class="preference">
@@ -82,10 +83,10 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list">
-            <li>
+            <li class="section-imeg">
               <img src="./image/img1.jpg" alt="Верстаємо сайти" width="370" height="294" />
             </li>
-            <li>
+            <li class="section-imeg">
               <img
                 src="./image/img2.jpg"
                 alt="Розробляємо мобільні застосунки"
@@ -93,16 +94,16 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="section-imeg">
               <img src="./image/img3.jpg" alt="Займаємося дизайном" width="370" height="294" />
             </li>
           </ul>
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list-team">
+          <ul class="list">
             <li class="team-card">
               <img
                 src="./image/imeg_men1.jpg"
@@ -148,30 +149,31 @@
       </section>
     </main>
     <footer class="cellar">
-      <div class="container"><a href="./index.html" class="logo logo-cellar link"
-        ><span class="logo-web">Web</span>Studio</a
-      >
-      <address>
-        <ul class="list">
-          <li>
-            <a
-              href="https://goo.gl/maps/hQi2LecKAwHkqkRQ6"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="adress link"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
+      <div class="container cellar-container">
+        <a href="./index.html" class="logo logo-cellar link"
+          ><span class="logo-web">Web</span>Studio</a
+        >
+        <address>
+          <ul class="list-cellar">
+            <li>
+              <a
+                href="https://goo.gl/maps/hQi2LecKAwHkqkRQ6"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="adress link"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
 
-          <li>
-            <a href="mailto:info@devstudio.com" class="adress-link link">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="adress-link link">+380961111111</a>
-          </li>
-        </ul>
-      </address></div>
-      
+            <li>
+              <a href="mailto:info@devstudio.com" class="adress-link link">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="adress-link link">+380961111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
